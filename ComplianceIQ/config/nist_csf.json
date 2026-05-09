@@ -1,0 +1,184 @@
+{
+  "framework": "NIST Cybersecurity Framework (CSF) v1.1",
+  "functions": {
+    "IDENTIFY": {
+      "description": "Develop understanding to manage cybersecurity risk to systems, assets, data, and capabilities.",
+      "categories": {
+        "ID.AM": {
+          "name": "Asset Management",
+          "controls": [
+            {"id":"ID.AM-1","desc":"Physical devices and systems within the organization are inventoried."},
+            {"id":"ID.AM-2","desc":"Software platforms and applications within the organization are inventoried."},
+            {"id":"ID.AM-5","desc":"Resources are prioritized based on their classification, criticality, and business value."},
+            {"id":"ID.AM-6","desc":"Cybersecurity roles and responsibilities for the entire workforce are established."}
+          ]
+        },
+        "ID.GV": {
+          "name": "Governance",
+          "controls": [
+            {"id":"ID.GV-1","desc":"Organizational cybersecurity policy is established and communicated."},
+            {"id":"ID.GV-2","desc":"Cybersecurity roles and responsibilities are coordinated with internal roles and external partners."},
+            {"id":"ID.GV-3","desc":"Legal and regulatory requirements regarding cybersecurity are understood and managed."},
+            {"id":"ID.GV-4","desc":"Governance and risk management processes address cybersecurity risks."}
+          ]
+        },
+        "ID.RA": {
+          "name": "Risk Assessment",
+          "controls": [
+            {"id":"ID.RA-1","desc":"Asset vulnerabilities are identified and documented."},
+            {"id":"ID.RA-2","desc":"Cyber threat intelligence is received from information sharing forums and sources."},
+            {"id":"ID.RA-3","desc":"Threats, both internal and external, are identified and documented."},
+            {"id":"ID.RA-5","desc":"Threats, vulnerabilities, likelihoods, and impacts are used to determine risk."},
+            {"id":"ID.RA-6","desc":"Risk responses are identified and prioritized."}
+          ]
+        },
+        "ID.RM": {
+          "name": "Risk Management Strategy",
+          "controls": [
+            {"id":"ID.RM-1","desc":"Risk management processes are established, managed, and agreed to by stakeholders."},
+            {"id":"ID.RM-2","desc":"Organizational risk tolerance is determined and clearly expressed."},
+            {"id":"ID.RM-3","desc":"The organization's determination of risk tolerance is informed by its role in critical infrastructure."}
+          ]
+        }
+      }
+    },
+    "PROTECT": {
+      "description": "Develop and implement appropriate safeguards to ensure delivery of critical services.",
+      "categories": {
+        "PR.AC": {
+          "name": "Identity Management & Access Control",
+          "controls": [
+            {"id":"PR.AC-1","desc":"Identities and credentials are issued, managed, verified, revoked, and audited."},
+            {"id":"PR.AC-3","desc":"Remote access is managed."},
+            {"id":"PR.AC-4","desc":"Access permissions and authorizations are managed, incorporating least privilege and separation of duties."},
+            {"id":"PR.AC-5","desc":"Network integrity is protected, incorporating network segregation where appropriate."},
+            {"id":"PR.AC-7","desc":"Users, devices, and other assets are authenticated commensurate with the risk of the transaction."}
+          ]
+        },
+        "PR.AT": {
+          "name": "Awareness & Training",
+          "controls": [
+            {"id":"PR.AT-1","desc":"All users are informed and trained on cybersecurity policies and procedures."},
+            {"id":"PR.AT-2","desc":"Privileged users understand their roles and responsibilities."},
+            {"id":"PR.AT-3","desc":"Third-party stakeholders understand their roles and responsibilities."}
+          ]
+        },
+        "PR.DS": {
+          "name": "Data Security",
+          "controls": [
+            {"id":"PR.DS-1","desc":"Data-at-rest is protected using encryption."},
+            {"id":"PR.DS-2","desc":"Data-in-transit is protected using encryption."},
+            {"id":"PR.DS-3","desc":"Assets are formally managed throughout removal, transfers, and disposition."},
+            {"id":"PR.DS-5","desc":"Protections against data leaks are implemented."},
+            {"id":"PR.DS-6","desc":"Integrity checking mechanisms are used to verify software and firmware."}
+          ]
+        },
+        "PR.IP": {
+          "name": "Information Protection Processes",
+          "controls": [
+            {"id":"PR.IP-1","desc":"A baseline configuration of IT/OT systems is created and maintained."},
+            {"id":"PR.IP-3","desc":"Configuration change control processes are in place."},
+            {"id":"PR.IP-4","desc":"Backups of information are conducted, maintained, and tested."},
+            {"id":"PR.IP-7","desc":"Protection processes are improved continuously."},
+            {"id":"PR.IP-9","desc":"Response plans (Incident Response and Business Continuity) are in place and managed."},
+            {"id":"PR.IP-12","desc":"A vulnerability management plan is developed and implemented."}
+          ]
+        }
+      }
+    },
+    "DETECT": {
+      "description": "Develop and implement appropriate activities to identify the occurrence of a cybersecurity event.",
+      "categories": {
+        "DE.AE": {
+          "name": "Anomalies & Events",
+          "controls": [
+            {"id":"DE.AE-1","desc":"A baseline of network operations and expected data flows is established and managed."},
+            {"id":"DE.AE-2","desc":"Detected events are analyzed to understand attack targets and methods."},
+            {"id":"DE.AE-3","desc":"Event data are collected and correlated from multiple sources and sensors."},
+            {"id":"DE.AE-5","desc":"Incident alert thresholds are established."}
+          ]
+        },
+        "DE.CM": {
+          "name": "Security Continuous Monitoring",
+          "controls": [
+            {"id":"DE.CM-1","desc":"The network is monitored to detect potential cybersecurity events."},
+            {"id":"DE.CM-3","desc":"Personnel activity is monitored to detect potential cybersecurity events."},
+            {"id":"DE.CM-4","desc":"Malicious code is detected."},
+            {"id":"DE.CM-7","desc":"Monitoring for unauthorized personnel, connections, devices, and software is performed."}
+          ]
+        }
+      }
+    },
+    "RESPOND": {
+      "description": "Develop and implement appropriate activities to take action regarding a detected cybersecurity incident.",
+      "categories": {
+        "RS.RP": {
+          "name": "Response Planning",
+          "controls": [
+            {"id":"RS.RP-1","desc":"Response plan is executed during or after an incident."}
+          ]
+        },
+        "RS.CO": {
+          "name": "Communications",
+          "controls": [
+            {"id":"RS.CO-1","desc":"Personnel know their roles and order of operations when a response is needed."},
+            {"id":"RS.CO-2","desc":"Incidents are reported consistent with established criteria."},
+            {"id":"RS.CO-3","desc":"Information is shared consistent with response plans."}
+          ]
+        },
+        "RS.AN": {
+          "name": "Analysis",
+          "controls": [
+            {"id":"RS.AN-1","desc":"Notifications from detection systems are investigated."},
+            {"id":"RS.AN-4","desc":"Incidents are categorized consistent with response plans."}
+          ]
+        },
+        "RS.MI": {
+          "name": "Mitigation",
+          "controls": [
+            {"id":"RS.MI-1","desc":"Incidents are contained."},
+            {"id":"RS.MI-2","desc":"Incidents are mitigated."},
+            {"id":"RS.MI-3","desc":"Newly identified vulnerabilities are mitigated or documented as accepted risks."}
+          ]
+        }
+      }
+    },
+    "RECOVER": {
+      "description": "Develop and implement appropriate activities to maintain resilience and restore capabilities.",
+      "categories": {
+        "RC.RP": {
+          "name": "Recovery Planning",
+          "controls": [
+            {"id":"RC.RP-1","desc":"Recovery plan is executed during or after a cybersecurity incident."}
+          ]
+        },
+        "RC.IM": {
+          "name": "Improvements",
+          "controls": [
+            {"id":"RC.IM-1","desc":"Recovery plans incorporate lessons learned."},
+            {"id":"RC.IM-2","desc":"Recovery strategies are updated."}
+          ]
+        },
+        "RC.CO": {
+          "name": "Communications",
+          "controls": [
+            {"id":"RC.CO-1","desc":"Public relations are managed."},
+            {"id":"RC.CO-2","desc":"Reputation is repaired after an incident."}
+          ]
+        }
+      }
+    }
+  },
+  "maturity_levels": {
+    "0": {"label":"Not Implemented",   "color":"#dc2626","score":0},
+    "1": {"label":"Partial",           "color":"#ea580c","score":25},
+    "2": {"label":"Risk Informed",     "color":"#d97706","score":50},
+    "3": {"label":"Repeatable",        "color":"#16a34a","score":75},
+    "4": {"label":"Adaptive (Optimal)","color":"#2563eb","score":100}
+  },
+  "risk_matrix": {
+    "likelihood": {"1":"Rare","2":"Unlikely","3":"Possible","4":"Likely","5":"Almost Certain"},
+    "impact":     {"1":"Negligible","2":"Minor","3":"Moderate","4":"Major","5":"Catastrophic"},
+    "thresholds": {"LOW":[1,6],"MEDIUM":[7,12],"HIGH":[13,19],"CRITICAL":[20,25]}
+  }
+}
